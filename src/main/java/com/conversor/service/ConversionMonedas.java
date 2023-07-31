@@ -1,4 +1,4 @@
-package com.example.service;
+package com.conversor.service;
 
 import java.math.BigDecimal;
 

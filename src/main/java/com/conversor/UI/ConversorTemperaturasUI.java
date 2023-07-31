@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.example.service.ConversionTemperaturas;
+import com.conversor.service.ConversionTemperaturas;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;

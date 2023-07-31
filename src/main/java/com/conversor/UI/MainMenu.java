@@ -71,7 +71,7 @@ public class MainMenu extends JFrame {
 
 	private class MoneyAction extends AbstractAction {
 		public MoneyAction() {
-			putValue(NAME, "Conversor de Moneda");
+			putValue(NAME, "Conversor de Divisas");
 			putValue(SHORT_DESCRIPTION, "Create the money conversor window");
 		}
 		public void actionPerformed(ActionEvent e) {

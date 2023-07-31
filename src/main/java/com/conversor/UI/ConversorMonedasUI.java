@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.example.service.ConversionMonedas;
+import com.conversor.service.ConversionMonedas;
 
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
@@ -50,6 +50,7 @@ public class ConversorMonedasUI extends JFrame {
 	 * Create the frame.
 	 */
 	public ConversorMonedasUI() {
+		setTitle("Conversor de divisas");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
