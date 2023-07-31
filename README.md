@@ -33,12 +33,15 @@ Conversiones contempladas:
 ## Interfaz de usuario
 
 * Pantalla principal
+
 ![alt text](./Documentacion/Principal.jpg)
 
 * Conversor de divisas 
+
 ![alt text](./Documentacion/Divisas.jpg)
 
 * Conversor de Temperaturas
+
 ![alt text](./Documentacion/Temperaturas.jpg)
 
 ## Instrucciones de uso
