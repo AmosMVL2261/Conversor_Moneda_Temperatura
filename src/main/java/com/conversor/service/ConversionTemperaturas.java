@@ -5,20 +5,20 @@ import java.math.BigDecimal;
 public class ConversionTemperaturas {
 	
 	public BigDecimal conversion(String selectedOption, BigDecimal value) {
-		if(selectedOption.equals("Grados Celcius a Grados Fahrenheit")) {
-			return celciusToFahrenheit(value);
+		if(selectedOption.equals("Grados Celsius a Grados Fahrenheit")) {
+			return CelsiusToFahrenheit(value);
 		}
-		if(selectedOption.equals("Grados Celcius a Kelvin")) {
-			return celciusToKelvin(value);
+		if(selectedOption.equals("Grados Celsius a Kelvin")) {
+			return CelsiusToKelvin(value);
 		}
-		if(selectedOption.equals("Grados Fahrenheit a Grados Celcius")) {
-			return fahrenheitToCelcius(value);
+		if(selectedOption.equals("Grados Fahrenheit a Grados Celsius")) {
+			return fahrenheitToCelsius(value);
 		}
 		if(selectedOption.equals("Grados Fahrenheit a Kelvin")) {
 			return fahrenheitToKelvin(value);
 		}
-		if(selectedOption.equals("Kelvin a Grados Celcius")) {
-			return kelvinToCelcius(value);
+		if(selectedOption.equals("Kelvin a Grados Celsius")) {
+			return kelvinToCelsius(value);
 		}
 		if(selectedOption.equals("Kelvin a Grados Fahrenheit")) {
 			return kelvinToFahrenheit(value);
@@ -26,7 +26,7 @@ public class ConversionTemperaturas {
 		return new BigDecimal(-110000);
 	}
 	
-	public BigDecimal celciusToFahrenheit(BigDecimal value) {
+	public BigDecimal CelsiusToFahrenheit(BigDecimal value) {
 		//Minimum temperature possible: Absolute zero
 		BigDecimal temp = new BigDecimal("-273.15");
 		if(value.compareTo(temp) == -1) {
@@ -41,7 +41,7 @@ public class ConversionTemperaturas {
 		return value.add(temp);
 	}
 	
-	public BigDecimal celciusToKelvin(BigDecimal value) {
+	public BigDecimal CelsiusToKelvin(BigDecimal value) {
 		//Minimum temperature possible: Absolute zero
 		BigDecimal temp = new BigDecimal("-273.15");
 		if(value.compareTo(temp) == -1) {
@@ -54,7 +54,7 @@ public class ConversionTemperaturas {
 		return value.add(temp);
 	}
 	
-	public BigDecimal fahrenheitToCelcius(BigDecimal value) {
+	public BigDecimal fahrenheitToCelsius(BigDecimal value) {
 		//Minimum temperature possible: Absolute zero
 		BigDecimal temp = new BigDecimal("-459.67");
 		if(value.compareTo(temp) == -1) {
@@ -86,7 +86,7 @@ public class ConversionTemperaturas {
 		return value.add(temp);
 	}
 	
-	public BigDecimal kelvinToCelcius(BigDecimal value) {
+	public BigDecimal kelvinToCelsius(BigDecimal value) {
 		//Minimum temperature possible: Absolute zero
 		BigDecimal temp = new BigDecimal("0");
 		if(value.compareTo(temp) == -1) {

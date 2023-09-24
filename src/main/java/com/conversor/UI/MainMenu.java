@@ -15,6 +15,7 @@ import javax.swing.Action;
 
 public class MainMenu extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private final Action action = new MoneyAction();
 	private final Action action_1 = new TemperatureAction();
@@ -70,6 +71,7 @@ public class MainMenu extends JFrame {
 	}
 
 	private class MoneyAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public MoneyAction() {
 			putValue(NAME, "Conversor de Divisas");
 			putValue(SHORT_DESCRIPTION, "Create the money conversor window");
@@ -81,6 +83,7 @@ public class MainMenu extends JFrame {
 		}
 	}
 	private class TemperatureAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public TemperatureAction() {
 			putValue(NAME, "Conversor de temperatura");
 			putValue(SHORT_DESCRIPTION, "Create the temperatures conversor window");

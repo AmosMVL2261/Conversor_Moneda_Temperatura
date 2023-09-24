@@ -8,7 +8,6 @@ import javax.swing.border.EmptyBorder;
 
 import com.conversor.service.ConversionMonedas;
 
-import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -23,12 +22,13 @@ import javax.swing.Action;
 
 public class ConversorMonedasUI extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField inputField;
 	private JTextField resultadoField;
 	private final Action regresar = new RegresarAction();
 	private final Action action = new ConvertirAction();
-	JComboBox comboBox;
+	private JComboBox<String> comboBox;
 
 	/**
 	 * Launch the application.
@@ -86,7 +86,7 @@ public class ConversorMonedasUI extends JFrame {
 				"Convertir de Yen Japonés a Peso mexicano",
 				"Convertir de Won sul-coreano a Peso mexicano"
 		};
-		comboBox = new JComboBox(options);
+		comboBox = new JComboBox<String>(options);
 		comboBox.setSize(600, 100);
 		comboBox.setBounds(22, 56, 389, 24);
 		contentPane.add(comboBox);
@@ -106,6 +106,7 @@ public class ConversorMonedasUI extends JFrame {
 		contentPane.add(btnRegresar);
 	}
 	private class RegresarAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public RegresarAction() {
 			putValue(NAME, "Regresar");
 			putValue(SHORT_DESCRIPTION, "Regresar al menu principal");
@@ -117,6 +118,7 @@ public class ConversorMonedasUI extends JFrame {
 		}
 	}
 	private class ConvertirAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public ConvertirAction() {
 			putValue(NAME, "Convertir");
 			putValue(SHORT_DESCRIPTION, "Realiza la conversión");

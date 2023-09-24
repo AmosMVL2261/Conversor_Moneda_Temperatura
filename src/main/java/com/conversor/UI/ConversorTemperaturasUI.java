@@ -22,12 +22,13 @@ import javax.swing.Action;
 
 public class ConversorTemperaturasUI extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField inputField;
 	private JTextField resultadoField;
 	private final Action action = new ConvertirAction();
 	private final Action regresar = new RegresarAction();
-	JComboBox comboBox;
+	private JComboBox<String> comboBox;
 
 	/**
 	 * Launch the application.
@@ -74,14 +75,14 @@ public class ConversorTemperaturasUI extends JFrame {
 		
 		
 		String[] options = {
-				"Grados Celcius a Grados Fahrenheit",
-				"Grados Celcius a Kelvin",
-				"Grados Fahrenheit a Grados Celcius",
+				"Grados Celsius a Grados Fahrenheit",
+				"Grados Celsius a Kelvin",
+				"Grados Fahrenheit a Grados Celsius",
 				"Grados Fahrenheit a Kelvin",
-				"Kelvin a Grados Celcius",
+				"Kelvin a Grados Celsius",
 				"Kelvin a Grados Fahrenheit"
 		};
-		comboBox = new JComboBox(options);
+		comboBox = new JComboBox<String>(options);
 		comboBox.setBounds(68, 64, 303, 22);
 		contentPane.add(comboBox);
 		
@@ -102,6 +103,7 @@ public class ConversorTemperaturasUI extends JFrame {
 
 
 	private class RegresarAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public RegresarAction() {
 			putValue(NAME, "Regresar");
 			putValue(SHORT_DESCRIPTION, "Regresar al menu principal");
@@ -113,6 +115,7 @@ public class ConversorTemperaturasUI extends JFrame {
 		}
 	}
 	private class ConvertirAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
 		public ConvertirAction() {
 			putValue(NAME, "Convertir");
 			putValue(SHORT_DESCRIPTION, "Some short description");
