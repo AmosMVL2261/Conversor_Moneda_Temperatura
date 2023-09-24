@@ -1,6 +1,6 @@
 # Conversor de Monedas y Temperaturas
 
-Este proyecto es un programa conversor, que cubre la tematica de conversor de divisas y conversor de temperaturas.
+Programa de escritorio que permite la conversión de divisas y temperaturas. Construido usando la librería de Swing de Java, presenta una interfaz sencilla pero clara para el usuario, dirigiéndolo hacia las operaciones deseadas.
 
 ## Conversor de divisas 
 
@@ -22,12 +22,12 @@ Conversiones contempladas:
 
 Conversiones contempladas:
 
-* Grados Celcius - Grados Farenheit
-* Grados Celcius - Kelvin
-* Grados Farenheit - Grados Celcius
-* Grados Farenheit - Kelvin
-* Kelvin - Grados Celcius
-* Kelvin - Grados Farenheit
+* Grados Celsius - Grados Fahrenheit
+* Grados Celsius - Kelvin
+* Grados Fahrenheit - Grados Celsius
+* Grados Fahrenheit - Kelvin
+* Kelvin - Grados Celsius
+* Kelvin - Grados Fahrenheit
 
 
 ## Interfaz de usuario
@@ -46,4 +46,4 @@ Conversiones contempladas:
 
 ## Instrucciones de uso
 
-El proyecto fue diseñado en el IDE Eclipse, por lo que se recomienda su uso dentro de este IDE. El proyecto fue desarrollado como un proyecto maven por lo que se debe de abrir el proyecto en el IDE antes de ejecutarlo. La ejecución del programa se realiza con la clase Main. La ventana resultante dara la opcion del conversor a elejir. Seleccione el conversor deseado e ingrese la cantidad numerica correspondiente. El conversor acepta numeros positivos, negativos y decimales. El conversor de temperatura no acepta valores menores al valor teorico del cero absoluto.
+El proyecto fue diseñado en el IDE Eclipse, por lo que se recomienda su uso dentro de este IDE. El proyecto fue desarrollado como un proyecto maven por lo que se debe de abrir el proyecto en el IDE antes de ejecutarlo. La ejecución del programa se realiza con la clase Main. La ventana resultante dará la opción del conversor a elegir. Seleccione el conversor deseado e ingrese la cantidad numérica correspondiente. El conversor acepta números positivos, negativos y decimales. El conversor de temperatura no acepta valores menores al valor teórico del cero absoluto.
